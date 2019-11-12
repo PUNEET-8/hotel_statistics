@@ -1,0 +1,48 @@
+{% extends 'admin/base.html' %}
+{% load staticfiles  %}
+{% load i18n %}
+{% block header-links %} 
+<link href="{% static 'assets/vendors/data-tables/css/jquery.dataTables.min.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'assets/vendors/data-tables/css/select.dataTables.min.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'assets/css/pages/data-tables.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block content-wrapper %}
+<div id="main">
+<div class="row">
+<!-- Search for small screen-->
+<div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+<div class="breadcrumbs-dark pb-0 pt-4" id="breadcrumbs-wrapper">
+        <!-- Search for small screen-->
+        <div class="container">
+            <div class="row">
+                <div class="col s10 m6 l6">
+                    <h5 class="breadcrumbs-title mt-0 mb-0">{% block header-title %} {% endblock %}</h5>
+                    {% block breadcrumb %}{% endblock %}
+                </div>
+            </div>
+       </div>
+</div>
+<div class="col s12">
+                <div class="container">
+                    <div class="section section-data-tables">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="caption mb-0">{% block header-description %}{% endblock %}</p>
+                            </div>
+                        </div>
+
+{% block content-body %}
+{% endblock %}
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="{% static 'assets/vendors/data-tables/js/jquery.dataTables.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/vendors/data-tables/js/dataTables.select.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/js/scripts/data-tables.js' %}" type="text/javascript"></script>
+{% endblock %}

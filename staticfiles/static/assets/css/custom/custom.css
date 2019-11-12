@@ -1,0 +1,125 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 5.0
+	Author: PIXINVENT
+	Author URL: https://themeforest.net/user/pixinvent/portfolio
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+span.side_title{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    pointer-events: none;
+    transform-origin: left top;
+    transition: transform 0.25s
+
+}
+
+ul.parsley-errors-list{
+    color: red;
+}
+.brand-sidebar span.logo-text{
+    white-space: normal;
+    font-size: 18px;
+    line-height: normal;
+}
+.alert.alert-warning{
+    background-color: #f96363;
+    color: #fff;
+    padding: 10px 15px 10px 15px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.alert .close{
+    position: absolute;
+    right: 8px;
+    top: 0;
+    background: #fff;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 30px;
+}
+#data-table-students td img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1{
+    background-color: transparent !important;
+}
+
+#data-table-students td .btn-group a{
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 5px;
+}
+#data-table-students td .btn-group a i{
+    vertical-align: bottom;
+}
+.personal-info strong{
+    font-weight: 700;
+    color: #000;
+    margin-right: 5px;
+}
+#user-profile .star-width {
+    font-size: 20px;
+    width: 18px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.loadingoverlay .loadingoverlay_text{
+    font-size: 24px !important;
+}
+.loadingoverlay .loadingoverlay_element svg{
+    width: 60px !important;
+    height: 60px !important;
+}
+.loadingoverlay .loadingoverlay_element.loadingoverlay_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+}
+.documents-form{
+    position: relative;
+    padding-right: 100px;
+    line-height: 30px;
+}
+.documents-form .delete-row{
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.documents-form label[for="teacherdocuments_set-0-file_name-clear_id"]{
+    display: none;
+}
+.active-fixed{
+    -webkit-transform: translateY(-20px) scale(.8) !important;
+    -moz-transform: translateY(-20px) scale(.8) !important;
+    -ms-transform: translateY(-20px) scale(.8) !important;
+    -o-transform: translateY(-20px) scale(.8) !important;
+    transform: translateY(-20px) scale(.8) !important;
+    -webkit-transform-origin: 0 0 !important;
+    -moz-transform-origin: 0 0 !important;
+    -ms-transform-origin: 0 0 !important;
+    -o-transform-origin: 0 0 !important;
+    transform-origin: 0 0 !important;
+}
+.cke_1{
+    margin-top: 15px;
+}

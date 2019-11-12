@@ -1,0 +1,187 @@
+
+{% load staticfiles  %}
+<aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square">
+	<div class="brand-sidebar">
+		<h1 class="logo-wrapper">
+			<a class="brand-logo darken-1" href="#">
+				<img alt="materialize logo" src="{% static 'assets/images/logo/materialize-logo-color.png' %}">
+				<span class="logo-text hide-on-med-and-down " >Brown Sugar Cafe</span>
+				</img>
+			</a>
+			<!-- <a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a> -->
+		</h1>
+	</div>
+	<ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" data-collapsible="menu-accordion" data-menu="menu-navigation" id="slide-out">
+		<li class="bold"><a class="waves-effect waves-cyan " href="{% url 'dashboard' %}"><i class="material-icons">settings_input_svideo</i><span class="menu-title" data-i18n="">Dashboard</span></a>
+		</li>
+		<!-- -----------------Users------------------------ -->
+		<li class="navigation-header"><a class="navigation-header-text">Users </a><i class="navigation-header-icon material-icons">more_horiz</i>
+		</li>
+		<li class="bold students">
+			<a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">person_pin</i><span class="menu-title" data-i18n="">ROR</span>
+			{% if request.user.is_authenticated %}
+			<span class="badge badge pill purple float-right mr-10">0</span>
+			{% endif %}
+			</a>
+			<div class="collapsible-body">
+				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li class="active add_student">
+						<a class="collapsible-body  add_student" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Mongo DB</span></a>
+					</li>
+					<li class="student_list">
+						<a class="collapsible-body student_list" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>R</span></a>
+					</li>
+					
+				</ul>
+			</div>
+		</li>
+		<li class="bold teachers">
+			<a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">person_pin</i><span class="menu-title" data-i18n="">Python</span>
+			{% if request.user.is_authenticated %}
+			<span class="badge badge pill purple float-right mr-10">0</span>
+			{% endif %}
+			</a>
+			<div class="collapsible-body">
+				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li class="active add_teacher">
+						<a class="collapsible-body  add_teacher" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Data Science</span></a>
+					</li>
+					<li class="teacher_list">
+						<a class="collapsible-body teacher_list" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>ML</span></a>
+					</li>
+					
+				</ul>
+			</div>
+		</li>
+		<li class="bold Email">
+			<a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">mail_outline</i><span class="menu-title" data-i18n="">Email</span>
+			{% if request.user.is_authenticated %}
+			
+			{% endif %}
+			</a>
+			<div class="collapsible-body">
+				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li class="active send_mail">
+						<a class="collapsible-body  send_mail" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Send Mail</span></a>
+					</li>
+					
+				</ul>
+			</div>
+		</li>
+		<!-- -----------------Bookings------------------------ -->
+		<li class="navigation-header"><a class="navigation-header-text">Bookings</a><i class="navigation-header-icon material-icons">more_horiz</i>
+		</li>
+		<li class="bold bookings">
+			<a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">access_time</i><span class="menu-title" data-i18n="">Bookings</span>
+			</a>
+			<div class="collapsible-body">
+				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li class="bookings_list">
+						<a class="collapsible-body bookings_list" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Booking List</span></a>
+					</li>
+					
+				</ul>
+			</div>
+		</li>
+
+
+		<li class="bold notification_template">
+			<a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">notifications_none</i><span class="menu-title" data-i18n="">Notification Templates</span>
+			</a>
+			<div class="collapsible-body">
+				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li class="add_notifications">
+						<a class="collapsible-body add_notifications" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Add Template</span></a>
+					</li>
+					<li class="notifications">
+						<a class="collapsible-body notifications" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Templates</span></a>
+					</li>		
+				</ul>
+			</div>
+		</li>
+
+
+
+		<!-- -----------------Settings------------------------ -->
+		<li class="navigation-header"><a class="navigation-header-text">Settings </a><i class="navigation-header-icon material-icons">more_horiz</i>
+		</li>
+		<li class="bold static_pages">
+			<a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">pages</i><span class="menu-title" data-i18n="">Static Pages</span>
+			</a>
+			<div class="collapsible-body">
+				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li class="active add_page">
+						<a class="collapsible-body  add_page" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Add a page</span></a>
+					</li>
+					<li class="pages_list">
+						<a class="collapsible-body pages_list" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Static Pages</span></a>
+					</li>
+					
+				</ul>
+			</div>
+		</li>
+		<li class="bold email_templates">
+			<a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">mail_outline</i><span class="menu-title" data-i18n="">Email Templates</span>
+			</a>
+			<div class="collapsible-body">
+				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li class="active add_email_template">
+						<a class="collapsible-body  add_email_template" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Add a email template</span></a>
+					</li>
+					<li class="email_templates_list">
+						<a class="collapsible-body email_templates_list" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Email Templates</span></a>
+					</li>
+					
+				</ul>
+			</div>
+		</li>
+		<li class="bold categories">
+			<a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">view_module</i><span class="menu-title" data-i18n="">Categories</span>
+			</a>
+			<div class="collapsible-body">
+				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li class="active add_category">
+						<a class="collapsible-body  add_category" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Add a category</span></a>
+					</li>
+					<li class="categories_list">
+						<a class="collapsible-body categories_list" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Category list</span></a>
+					</li>
+					<li class="subject_add">
+						<a class="collapsible-body subject_add" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Python</span></a>
+					</li>
+					<li class="subject_list">
+						<a class="collapsible-body subject_list" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>ROR</span></a>
+					</li>
+				</ul>
+			</div>
+		</li>
+
+		<!-- -----------------Offers------------------------ -->
+		<li class="navigation-header"><a class="navigation-header-text">Offers</a><i class="navigation-header-icon material-icons">more_horiz</i>
+		</li>
+		<li class="bold offers">
+			<a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">local_offer</i><span class="menu-title" data-i18n="">Offers Templates</span>
+			</a>
+			<div class="collapsible-body">
+				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li class="active add_offer">
+						<a class="collapsible-body  add_offer" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Stock</span></a>
+					</li>
+					<li class="offers_list">
+						<a class="collapsible-body offers_list" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Python</span></a>
+					</li>
+					<li class="active Redeem_offer">
+						<a class="collapsible-body  Redeem_offer" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Flask</span></a>
+					</li>
+					<li class="used_offer">
+						<a class="collapsible-body used_offer" data-i18n="" href=""><i class="material-icons">radio_button_unchecked</i><span>Pyramid</span></a>
+					</li>
+					
+				</ul>
+			</div>
+		</li>
+
+	</ul>
+	<div class="navigation-background"></div>
+	<a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" data-target="slide-out" href="#"><i class="material-icons">menu</i></a>
+</aside>

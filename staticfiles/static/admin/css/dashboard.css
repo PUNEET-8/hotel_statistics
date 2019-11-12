@@ -1,0 +1,83 @@
+.dashboard #container #content-related{
+	width: 20% !important;
+}
+.dashboard #content.colMS{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	margin-top: 80px !important;
+	max-width: 100%;
+	width: 100%;
+}
+.dashboard #container #content-main{
+	max-width: 100% !important;
+	padding-bottom: 0 !important;
+}
+.dashboard-menu{
+	background: #b8d5a9;
+	padding: 15px 0 0 15px !important;
+	min-height: calc(100vh - 80px) !important;
+}
+.dashboard-menu ul{
+	padding: 0;
+	margin: 0;
+}
+.dashboard-menu ul li{
+	padding-left: 10px;
+	border-bottom: 1px solid #d7d7d7;
+
+}
+.dashboard-menu a{
+	color: #fff !important;
+	padding: 10px 15px !important;
+	display: inline-block;
+	width: 100%;
+	font-size: 16px !important;
+}
+.dashboard-menu a i{
+	margin-right: 5px;
+}
+.dashboard-menu a.section{
+	pointer-events: none;
+	cursor: default;
+	font-size: 18px !important;
+}
+.dashboard-menu a:hover, .dashboard-menu ul li a:hover{
+	color: #fff !important;
+	text-decoration: none !important;
+}
+.dashboard-menu td, .dashboard-menu th{
+	background-color: transparent !important; 
+}
+.dashboard #container #content-main .module{
+	margin-bottom: 0 !important;
+}
+.dashboard-menu nav:last-child ul li:last-child{
+	border-bottom: none;
+}
+.d-flex-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.dashboard #container #content-related .module ul.actionlist li{
+	list-style: none;
+}
+.dashboard-content{
+	padding-top: 30px;
+}
+.sidebar-section{
+	display: inline-block;
+	width: 100%;
+	vertical-align: bottom;
+}
+#branding h1, #branding h2{
+	font-size: 11px;
+}
+.sidebar-link.icon, .sidebar-link:visited.icon, .sidebar-link:hover.icon{
+	font-size: 14px;
+}
+.sidebar-title{
+	font-size: 14px;
+}
+.sidebar a:hover{
+	text-decoration: none;
+}
