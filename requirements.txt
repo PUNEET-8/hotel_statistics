@@ -33,7 +33,7 @@ datefinder==0.7.0
 decorator==4.4.0
 defusedxml==0.6.0
 dj-database-url==0.5.0
-Django==2.2.1
+Django==2.2.4
 django-admin-highcharts==0.1.1
 django-admin-shortcuts==2.0.0
 django-admin-tools==0.8.1
