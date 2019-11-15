@@ -1,0 +1,1 @@
+web: gunicorn HotelAdmin.wsgi --log-file -
